@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Krishna Chaitanya Vodnala - Computer Science & Engineering Student | Java Developer | Portfolio"/>
+  <title>Krishna Chaitanya Vodnala | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Raleway:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- Particle Canvas -->
+<canvas id="particleCanvas"></canvas>
+
+<!-- Navigation -->
+<nav id="navbar">
+  <div class="nav-logo">VKC</div>
+  <ul class="nav-links">
+    <li><a href="#home" class="nav-link active">Home</a></li>
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#skills" class="nav-link">Skills</a></li>
+    <li><a href="#projects" class="nav-link">Projects</a></li>
+    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+    <li><a href="https://github.com/KrishnaChaitanyaVodnala" target="_blank" class="nav-link">GitHub</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">Computer Science & Engineering</div>
+    <h1 class="hero-name">
+      <span class="first-name">Krishna Chaitanya</span>
+      <span class="last-name">Vodnala</span>
+    </h1>
+    <div class="hero-typewriter">
+      <span id="typewriter-text"></span><span class="cursor">|</span>
+    </div>
+    <p class="hero-tagline">Crafting elegant solutions through code & logic</p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#contact" class="btn btn-outline">Get In Touch</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num" data-target="9.2">0</span><span class="stat-unit">CGPA</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num" data-target="2">0</span><span class="stat-unit">Projects</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num" data-target="3">0</span><span class="stat-unit">Achievements</span></div>
+    </div>
+  </div>
+  <div class="hero-scroll-indicator" id="scrollIndicator">
+    <span>Scroll Down</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section about-section">
+  <div class="section-header">
+    <span class="section-tag">Who I Am</span>
+    <h2 class="section-title">About Me</h2>
+    <div class="title-underline"></div>
+  </div>
+  <div class="about-grid">
+    <div class="about-avatar-wrapper">
+      <div class="avatar-ring">
+        <div class="avatar-inner">
+          <img src="Me.jpeg" alt="Krishna Chaitanya Vodnala" class="avatar-photo" />
+        </div>
+      </div>
+      <div class="about-info-chips">
+        <div class="chip"><span>📍</span> Karimnagar, Telangana</div>
+        <div class="chip"><span>🎓</span> B.Tech CSE — CGPA 9.2</div>
+        <div class="chip"><span>🏫</span> CMR Technical Campus</div>
+        <div class="chip"><span>📅</span> 2024 – 2028</div>
+      </div>
+    </div>
+    <div class="about-text-block">
+      <p class="about-desc">
+        I am a <strong>3rd-year Computer Science and Engineering student</strong> with strong foundations in 
+        <strong>Java</strong> and <strong>Data Structures & Algorithms</strong>. I focus on 
+        <strong>algorithmic problem solving</strong>, writing <strong>efficient and scalable code</strong>, 
+        and developing <strong>backend-driven applications</strong>.
+      </p>
+      <p class="about-desc">
+        Focused on strengthening core computer science concepts and preparing for impactful 
+        <strong>software development roles</strong>. I thrive on tackling real-world challenges 
+        through clean, efficient, and scalable code.
+      </p>
+      <div class="soft-skills-row">
+        <span class="soft-tag">🤝 Teamwork</span>
+        <span class="soft-tag">⏱ Time Management</span>
+        <span class="soft-tag">👑 Leadership</span>
+        <span class="soft-tag">💬 Communication</span>
+        <span class="soft-tag">🧠 Critical Thinking</span>
+      </div>
+      <div class="lang-row">
+        <div class="lang-item"><span class="lang-name">English</span><span class="lang-level fluent">Fluent</span></div>
+        <div class="lang-item"><span class="lang-name">Telugu</span><span class="lang-level fluent">Fluent</span></div>
+        <div class="lang-item"><span class="lang-name">Hindi</span><span class="lang-level basic">Basic</span></div>
+      </div>
+      <div class="education-timeline">
+        <h3 class="sub-heading">Education</h3>
+        <div class="edu-item">
+          <div class="edu-dot"></div>
+          <div class="edu-content">
+            <h4>B.Tech in Computer Science & Engineering</h4>
+            <p>CMR Technical Campus, Hyderabad, Telangana</p>
+            <span class="edu-meta">2024 – 2028 &nbsp;|&nbsp; CGPA: <strong>9.2</strong></span>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-dot"></div>
+          <div class="edu-content">
+            <h4>Intermediate (MPC)</h4>
+            <p>Alphores Junior College, Karimnagar, Telangana</p>
+            <span class="edu-meta">2022 – 2024 &nbsp;|&nbsp; Marks: <strong>958/1000</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="section skills-section">
+  <div class="section-header">
+    <span class="section-tag">What I Know</span>
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="title-underline"></div>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-card" data-aos>
+      <div class="skill-icon">☕</div>
+      <h3>Programming Languages</h3>
+      <div class="skill-tags">
+        <span class="skill-pill primary">Java</span>
+        <span class="skill-pill primary">C</span>
+        <span class="skill-pill secondary">Python</span>
+      </div>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-label"><span>Java</span><span>85%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        <div class="skill-bar-label"><span>C</span><span>75%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        <div class="skill-bar-label"><span>Python</span><span>60%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+      </div>
+    </div>
+    <div class="skill-card" data-aos>
+      <div class="skill-icon">🧮</div>
+      <h3>Core CS</h3>
+      <div class="skill-tags">
+        <span class="skill-pill primary">DSA</span>
+        <span class="skill-pill primary">Algorithms</span>
+        <span class="skill-pill secondary">OS</span>
+        <span class="skill-pill secondary">Digital Electronics</span>
+        <span class="skill-pill secondary">Computer</span>
+      </div>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-label"><span>Data Structures</span><span>80%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        <div class="skill-bar-label"><span>Algorithms</span><span>78%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+        <div class="skill-bar-label"><span>OS</span><span>70%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+        <div class="skill-bar-label"><span>Digital Electronics</span><span>65%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+        <div class="skill-bar-label"><span>Computer Organization &Architecture</span><span>58%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="58"></div></div>
+      </div>
+    </div>
+    <div class="skill-card" data-aos>
+      <div class="skill-icon">🗄️</div>
+      <h3>Databases</h3>
+      <div class="skill-tags">
+        <span class="skill-pill primary">SQL</span>
+        <span class="skill-pill primary">MySQL</span>
+      </div>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-label"><span>MySQL</span><span>75%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        <div class="skill-bar-label"><span>SQL</span><span>78%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+      </div>
+    </div>
+    <div class="skill-card" data-aos>
+      <div class="skill-icon">⚙️</div>
+      <h3>Technologies</h3>
+      <div class="skill-tags">
+        <span class="skill-pill primary">JDBC</span>
+        <span class="skill-pill primary">Java Servlets</span>
+        <span class="skill-pill primary">Apache Tomcat</span>
+      </div>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-label"><span>JDBC</span><span>70%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+        <div class="skill-bar-label"><span>Java Servlets</span><span>72%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+        <div class="skill-bar-label"><span>Apache Tomcat</span><span>68%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="68"></div></div>
+      </div>
+    </div>
+    <div class="skill-card" data-aos>
+      <div class="skill-icon">🌐</div>
+      <h3>Web & Other</h3>
+      <div class="skill-tags">
+        <span class="skill-pill secondary">HTML/CSS</span>
+        <span class="skill-pill secondary">Data Visualization</span>
+      </div>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-label"><span>Web Dev</span><span>65%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+        <div class="skill-bar-label"><span>Data Visualization</span><span>60%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+      </div>
+    </div>
+    <div class="skill-card" data-aos>
+      <div class="skill-icon">🤖</div>
+      <h3>Machine Learning</h3>
+      <div class="skill-tags">
+        <span class="skill-pill secondary">Pandas</span>
+        <span class="skill-pill secondary">Scikit-learn</span>
+        <span class="skill-pill secondary">ML Models</span>
+      </div>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-label"><span>ML Concepts</span><span>62%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="62"></div></div>
+        <div class="skill-bar-label"><span>Pandas</span><span>58%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="58"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section projects-section">
+  <div class="section-header">
+    <span class="section-tag">What I've Built</span>
+    <h2 class="section-title">Projects</h2>
+    <div class="title-underline"></div>
+  </div>
+  <div class="projects-grid">
+    <div class="project-card" data-aos>
+      <div class="project-glow"></div>
+      <div class="project-header">
+        <div class="project-icon">🏨</div>
+        <div class="project-meta">
+          <span class="project-date">Feb 2026 – Mar 2026</span>
+          <div class="project-badge">Backend</div>
+        </div>
+      </div>
+      <h3 class="project-title">Hostel Management System</h3>
+      <p class="project-desc">
+        A comprehensive web-based system to manage student records, room allocation, fee tracking, and due payments.
+      </p>
+      <ul class="project-bullets">
+        <li>Built backend logic using Java Servlets and JDBC with MySQL database integration</li>
+        <li>Deployed on Apache Tomcat with a web-based HTML interface</li>
+        <li>Automated room allocation and fee management workflows</li>
+      </ul>
+      <div class="project-tech">
+        <span>Java</span>
+        <span>Servlets</span>
+        <span>JDBC</span>
+        <span>MySQL</span>
+        <span>Apache Tomcat</span>
+        <span>HTML</span>
+      </div>
+    </div>
+
+    <div class="project-card featured" data-aos>
+      <div class="project-glow"></div>
+      <div class="project-header">
+        <div class="project-icon">🔬</div>
+        <div class="project-meta">
+          <span class="project-date">Jan 2026</span>
+          <div class="project-badge ml-badge">Machine Learning</div>
+        </div>
+      </div>
+      <h3 class="project-title">Cervical Cancer Risk Detection</h3>
+      <p class="project-desc">
+        A Machine Learning–based system to classify cervical cancer risk levels using clinical and behavioral data for early diagnosis support.
+      </p>
+      <ul class="project-bullets">
+        <li>Developed ML classification model for cervical cancer risk levels</li>
+        <li>Performed data preprocessing and model training for early diagnosis</li>
+        <li>Ranked in Top 10% at YUKTI National Hackathon</li>
+      </ul>
+      <div class="project-tech">
+        <span>Python</span>
+        <span>Pandas</span>
+        <span>Scikit-learn</span>
+        <span>Machine Learning</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Achievements Section -->
+<section id="achievements" class="section achievements-section">
+  <div class="section-header">
+    <span class="section-tag">Recognition</span>
+    <h2 class="section-title">Achievements & Hackathons</h2>
+    <div class="title-underline"></div>
+  </div>
+  <div class="achievements-grid">
+    <div class="achievement-card" data-aos>
+      <div class="achievement-icon">🥇</div>
+      <div class="achievement-rank">1st Prize</div>
+      <h3>Code-a-thon Winner</h3>
+      <p>Secured 1st Prize at Code-a-thon organized by <strong>Forge Alumnus</strong> at CMR Technical Campus, Hyderabad.</p>
+    </div>
+    <div class="achievement-card" data-aos>
+      <div class="achievement-icon">🚀</div>
+      <div class="achievement-rank">Top 10%</div>
+      <h3>YUKTI Hackathon</h3>
+      <p>Ranked in the Top 10% in <strong>YUKTI Hackathon</strong> for the Cervical Cancer Risk Detection project at CMR Technical Campus.</p>
+    </div>
+    <div class="achievement-card" data-aos>
+      <div class="achievement-icon">⚡</div>
+      <div class="achievement-rank">Top 7%</div>
+      <h3>DSA Smart-Interviews</h3>
+      <p>Ranked in the Top 7% in <strong>Internal Smart-Interviews (DSA)</strong> Training at CMR Technical Campus.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section contact-section">
+  <div class="section-header">
+    <span class="section-tag">Let's Connect</span>
+    <h2 class="section-title">Contact Me</h2>
+    <div class="title-underline"></div>
+  </div>
+  <div class="contact-grid contact-grid-single">
+    <div class="contact-info">
+      <p class="contact-intro">
+        I'm always open to discussing new opportunities, collaborations, or just chatting about technology. 
+        Feel free to reach out!
+      </p>
+      <div class="contact-cards">
+        <a href="https://mail.google.com/mail/?view=cm&to=vkchaithu07@gmail.com" target="_blank" class="contact-card" id="email-card">
+          <div class="contact-card-icon">📧</div>
+          <div>
+            <span class="contact-card-label">Email</span>
+            <span class="contact-card-value">vkchaithu07@gmail.com</span>
+          </div>
+        </a>
+        <a href="tel:+917075547997" class="contact-card" id="phone-card">
+          <div class="contact-card-icon">📱</div>
+          <div>
+            <span class="contact-card-label">Phone</span>
+            <span class="contact-card-value">+91 70755 47997</span>
+          </div>
+        </a>
+        <a href="https://linkedin.com/in/krishna-chaitanya-vodnala-8b75b233b" target="_blank" class="contact-card" id="linkedin-card">
+          <div class="contact-card-icon">💼</div>
+          <div>
+            <span class="contact-card-label">LinkedIn</span>
+            <span class="contact-card-value">krishna-chaitanya-vodnala</span>
+          </div>
+        </a>
+        <a href="https://github.com/KrishnaChaitanyaVodnala" target="_blank" class="contact-card" id="github-card">
+          <div class="contact-card-icon">🔗</div>
+          <div>
+            <span class="contact-card-label">GitHub</span>
+            <span class="contact-card-value">KrishnaChaitanyaVodnala</span>
+          </div>
+        </a>
+        <div class="contact-card no-link" id="location-card">
+          <div class="contact-card-icon">📍</div>
+          <div>
+            <span class="contact-card-label">Location</span>
+            <span class="contact-card-value">Karimnagar, Telangana, India</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-logo">VKC</div>
+    <p class="footer-text">Krishna Chaitanya Vodnala &copy; 2026 &nbsp;|&nbsp; Built with ❤️ & Java Spirit</p>
+    <div class="footer-links">
+      <a href="https://mail.google.com/mail/?view=cm&to=vkchaithu07@gmail.com" target="_blank">Email</a>
+      <a href="tel:+917075547997">Phone</a>
+      <a href="https://linkedin.com/in/krishna-chaitanya-vodnala-8b75b233b" target="_blank">LinkedIn</a>
+      <a href="https://github.com/KrishnaChaitanyaVodnala" target="_blank">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
